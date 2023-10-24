@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- css of project -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- icones-font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- scripts of project -->
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <!-- Header Minhas Tarefas -->
+    <div class="context-container">
+        <header>
+            <h1>Minhas Tarefas</h1>
+        </header>
+        <form id="context-form">
+            <p>Adicione sua tarefa:</p>
+            <div class="form-controle">
+                <input type="text" id="context-input" placeholder=" Nova Tarefa ">
+                <button type="submit">
+                    <i class="fa-thin fa-plus"></i>
+                </button>
+            </div>
+        </form>
+
+    <form id="form-edit" class="hide">
+        <p>Editar sua tarefa</p>
+        <div class="form-controle">
+        <input type="text" id="input-edit">
+        <button type="submit">
+            <i class="fa-solid fa-check-double"></i>
+        </button>
+        </div>
+        <!-- cancelar edição btn -->
+        <button id="edit-cancel">Cancelar</button>
+    </form>
+    <div id="toolbar">
+        <div id="search">
+            <h4>Pesquisar:</h4>
+            <!-- apagar uma tarefa -->
+            <form >
+                <input type="text" id="serach-input" placeholder="Buscar">
+                <button id="delete-button">
+                    <i class="fa-solid fa-delete-left"></i>
+                </button>
+            </form>
+        </div>
+        <!-- filtro  -->
+        <div id="filter">
+            <h4>Filtrar:</h4>
+            <select id="select-filter">
+                <!-- All/Todos -->
+                <option value="all"><p>Todos</p></option>
+                <!-- tasks done / tarefas feitas -->
+                <option value="done">Feitas</option>
+                <!-- tasks todo / tarefas para fazer -->
+                <option value="todo">Pedentes</option>
+
+            </select>
+        </div>
+    </div>
+    <div id="list-todo">
+        <div class="todo done">
+            <h3>tarefa 1</h3>
+            <button class="finish-todo">
+                <i class="fa-solid fa-check"></i>
+            </button>
+            <button class="edit-todo">
+                <i class="fa-solid fa-pen"></i>
+            </button>
+            <button class="delete-todo">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+        <div id="list-todo">
+            <div class="todo">
+                <h3>tarefa 2</h3>
+                <button class="finish-todo">
+                    <i class="fa-solid fa-check"></i>
+                </button>
+                <button class="edit-todo">
+                    <i class="fa-solid fa-pen"></i>
+                </button>
+                <button class="delete-todo">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+    </div>
+</div>
+</body>
+</html>
