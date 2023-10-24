@@ -1,0 +1,176 @@
+/* Cores */
+:root{
+    --1:#252525;
+    --2:#FDFDFD;
+    --3:#726c6c;
+    --4:#0f4391;
+    --5:#888;
+    --6:#395169;
+}
+/* Universal */
+*{
+    padding: 0;
+    margin: 0;
+    color:var(--2);
+    box-sizing: border-box;
+    font-family: Helvetica;
+}
+/* background image / fundo de tela */
+body{
+    background-image: url("../images/s.jpg");
+    background-position: center;
+    background-size: cover;
+}
+button{
+    background-color: var(--1);
+    color:var(--2);
+    border: 2px solid #333;
+    padding: .3rem .6rem;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s;  
+}
+button:hover{
+    background-color: var(--5);
+}
+
+button:hover > i{
+    color: var(--2);
+}
+
+button i {
+    color: var(--5  );
+    font-weight: bold;
+    pointer-events: none;
+}
+ input, select{
+    padding: 0.25rem 0.5rem;
+}
+input{
+    color: var(--1);
+}
+/* esconder */
+.hide{
+    display: none;
+}
+/* todo header */
+.context-container{
+    max-width: 450px;
+    margin: 3rem auto;
+    background-color: var(--1);
+    padding: 1.5rem;
+    border-radius: 15px;
+}
+/* Todo o Formulario */
+.context-container, #form-edit{
+    padding-top: 1rem;
+    border-bottom: 1px solid #ccc;
+}
+
+.context-container p{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+
+
+#form-edit p{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;      
+}
+
+.form-controle{
+    display: flex;
+    margin-top: 0.4rem;
+}
+
+.form-controle input{
+    margin-right: .3rem;
+}
+#edit-cancel{
+    margin-top: 1rem;
+}
+/* todo toolbar */
+#toolbar{
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+}
+
+#toolbar h4{
+    margin-bottom: .5rem;
+}
+
+#search {
+    border-right: 1px solid #888;
+    padding-right: 1rem;
+    margin-top: 1rem;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+}
+
+#search form{
+    display: flex;
+}
+
+#search form input{
+    width: 100%;
+    margin-left: .3rem; 
+}
+#filter{
+    width:35%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* color of background filter */
+select{
+    background: #333;
+}
+
+#filter select option{
+    background: #333 ;
+    
+}
+
+/* list todo */
+.todo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid var(--5);
+    transition: .3rem;
+}
+
+.todo h3 {
+    flex: 1;
+    font-size: 0.9rem
+}
+
+.todo button{
+    margin-left: 0.4rem;
+}
+
+/* done */
+
+.done{
+    background: var(--6);
+}
+
+.done h3{
+    font-style: italic;
+    color: var(--2);
+    text-decoration:line-through;
+}
+.todo .delete-todo{
+    transition: 0.4s;
+}
+
+#list-todo{transition: 0.5s;}
